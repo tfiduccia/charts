@@ -5,10 +5,10 @@ questions:
   - variable: a
     type: boolean
     description: The A"
-    default: true
+    default: "true"
   - variable: b
     type: boolean
-    default: false
+    default: true
     description: The B"
     subquestions:
       - variable: c
@@ -19,5 +19,10 @@ questions:
   - variable: d
     type: boolean
     default: "false"
+    description: The D"
+    show_if: "a=true&&b=true"
+  - variable: e
+    type: boolean
+    default: false
     description: The D"
     show_if: "a=true&&b=true"
