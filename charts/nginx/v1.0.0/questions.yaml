@@ -8,14 +8,14 @@ questions:
     default: true
   - variable: b
     type: boolean
-    default: true
+    default: false
     description: The B"
-    show_subquestions_if: "a=true"
     subquestions:
       - variable: c
         description: "The C"
         type: int
         default: 0
+        show_if: "b=true"
   - variable: d
     type: boolean
     default: "false"
