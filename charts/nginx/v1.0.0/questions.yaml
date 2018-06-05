@@ -8,7 +8,7 @@ questions:
     default: true
   - variable: b
     type: boolean
-    default: false
+    default: true
     description: The B"
     show_subquestions_if: "a"
     subquestions:
@@ -16,8 +16,9 @@ questions:
         description: "The C"
         type: int
         default: 0
+        show_if: "a"
   - variable: d
     type: boolean
     default: "false"
     description: The D"
-    show_if: "a&&b"
+    show_if: "a=true&&b=true"
