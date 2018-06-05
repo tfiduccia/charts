@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: nginx
-        kubernetes.io/cluster-service: true
+        kubernetes.io/cluster-service: "true"
     spec:
       containers:
       - image: nginx
