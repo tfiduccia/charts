@@ -18,3 +18,24 @@ spec:
         name: nginx
         stdin: true
         tty: true
+---
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: nginx2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+        kubernetes.io/cluster-service: "true"
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        stdin: true
+        tty: true
