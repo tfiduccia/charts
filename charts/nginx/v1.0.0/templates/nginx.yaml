@@ -2,9 +2,13 @@ apiVersion: apps/v1beta2
 kind: Deployment
 spec:
   template:
+    metadata:
+      labels:
+        app: nginx
     spec:
+      replicas: 1
       containers:
       - image: nginx
-        name: wrkld2
+        name: nginx
         stdin: true
         tty: true
