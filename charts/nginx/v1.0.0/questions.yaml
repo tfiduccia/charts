@@ -10,13 +10,12 @@ questions:
     type: boolean
     default: true
     description: The B"
-    show_subquestions_if: "a"
+    show_subquestions_if: "a=true"
     subquestions:
       - variable: c
         description: "The C"
         type: int
         default: 0
-        show_if: "a"
   - variable: d
     type: boolean
     default: "false"
