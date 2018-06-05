@@ -1,0 +1,23 @@
+categories:
+  - things
+  - stuffs
+questions:
+  - variable: a
+    type: boolean
+    description: The A"
+    default: "true"
+  - variable: b
+    type: boolean
+    default: "false"
+    description: The B"
+    show_subquestions_if: "a&&b"
+    subquestions:
+      - variable: c
+        description: "The C"
+        type: int
+        default: 0
+  - variable: d
+    type: boolean
+    default: "false"
+    description: The D"
+    show_if: "a||b"
