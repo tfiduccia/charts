@@ -1,12 +1,15 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
   template:
     metadata:
       labels:
         app: nginx
     spec:
-      replicas: 1
       containers:
       - image: nginx
         name: nginx
