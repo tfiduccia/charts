@@ -1,2 +1,3 @@
-name: Tani's Nginx
+name: nginx
 description: This is the description
+version: v1.0.0
