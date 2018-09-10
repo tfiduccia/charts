@@ -17,9 +17,9 @@ spec:
       - image: nginx
         name: nginx
         ports:
-          containerPort: 80
-          name: 80tcp01
-          protocol: TCP
+          - containerPort: 80
+            name: 80tcp01
+            protocol: TCP
         stdin: true
         tty: true
 ---
