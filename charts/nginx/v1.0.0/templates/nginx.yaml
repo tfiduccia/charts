@@ -16,6 +16,10 @@ spec:
       containers:
       - image: nginx
         name: nginx
+        ports:
+          containerPort: 1000
+          name: 1000tcp01
+          protocol: TCP
         stdin: true
         tty: true
 ---
