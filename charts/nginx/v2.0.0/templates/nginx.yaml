@@ -14,7 +14,7 @@ spec:
         kubernetes.io/cluster-service: "true"
     spec:
       containers:
-      - image: nginx111
+      - image: {{ .Values.image }}
         name: nginx
         ports:
           - containerPort: 80
